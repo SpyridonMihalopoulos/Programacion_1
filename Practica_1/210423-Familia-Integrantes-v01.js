@@ -78,7 +78,9 @@ class VIntegrante {
 	reporteIntegrante( mInt = new MIntegrante() ) {
 
 		reporte.innerHTML += 
-			`${String(mInt.ingresoMensual).padEnd(43,' . ')}` + `${String(mInt.gastoMensual).padEnd(43,' . ')}`+`${String(mInt.calcularMontoDisponible()).padStart(40,' . ')}` + "<br>" 
+			`${String(mInt.ingresoMensual).padEnd(43,' . ')}` + 
+			`${String(mInt.gastoMensual).padEnd(43,' . ')}`+
+			`${String(mInt.calcularMontoDisponible()).padStart(40,' . ')}` + "<br>" 
 
 	}
 }

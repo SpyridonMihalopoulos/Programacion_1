@@ -18,9 +18,12 @@ Se requiere de un programa que determine para cada integrante el monto que dispo
 
 ## Analisis
 <br>
+
 ![Analisis del problema](Analisis_Practica_1.jpeg)
 
 <br>
 
-Ejemplo guía realizado por el profesor: http://theeasyweb.net/profe_prog1
+
+## Guía
+[Ejemplo guia realizado por el profesor](http://theeasyweb.net/profe_prog1)
 
