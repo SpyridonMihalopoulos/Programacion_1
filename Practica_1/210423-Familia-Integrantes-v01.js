@@ -64,7 +64,6 @@ class MFamilia {
 
 	procesarIntegrante(mInt = new MIntegrante()) {
 
-		console.log("Procesando");
 		this.montoTotal += mInt.calcularMontoDisponible();
 	}
 
