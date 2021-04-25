@@ -23,6 +23,8 @@ Se requiere de un programa que determine para cada integrante el monto que dispo
 
 <br>
 
+## Resultado
+[Práctica resuelta](spyridonmihalopoulos.github.io/Programacion_1/Practica_1)
 
 ## Guía
 [Ejemplo guia realizado por el profesor](http://theeasyweb.net/profe_prog1)
