@@ -77,9 +77,9 @@ class VIntegrante {
 	reporteIntegrante( mInt = new MIntegrante() ) {
 
 		reporte.innerHTML += 
-			`${String(mInt.ingresoMensual).padEnd(43,' . ')}` + 
-			`${String(mInt.gastoMensual).padEnd(43,' . ')}`+
-			`${String(mInt.calcularMontoDisponible()).padStart(40,' . ')}` + "<br>" 
+			`${String(mInt.ingresoMensual).padEnd(30,' . ')}` + 
+			`${String(mInt.gastoMensual).padEnd(25,' . ')}`+
+			`${String(mInt.calcularMontoDisponible()).padStart(35,' . ')}` + "<br>" 
 
 	}
 }
@@ -109,8 +109,8 @@ class Controlador {
 		reporte.innerHTML = 
 
 			" -- REPORTE EJEMPLO -- <br><br>" + 
-			"Ingreso Mensual..... Gasto Mensual..... Monto Disponible <br>" + 
-			"=============================================== <br>" 
+			"Ingreso . . . . . Gasto . . . . . Monto Disponible <br>" + 
+			"====================================== <br>" 
 
 		let integrante1 = new MIntegrante(600,500);
 		let integrante2 = new MIntegrante(800,400);
@@ -146,8 +146,8 @@ class Controlador {
 			reporte.innerHTML += 
 
 				"<br><br> -- REPORTE MANUAL -- <br><br>" + 
-				"Ingreso Mensual..... Gasto Mensual..... Monto Disponible <br>" + 
-				"=============================================== <br>" 
+				"Ingreso . . . . . Gasto . . . . . Monto Disponible <br>" + 
+				"====================================== <br>" 
 
 			while(procesar) {
 				
