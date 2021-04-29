@@ -1,4 +1,4 @@
-# Practica 2: Planteamiento del problema
+# Practica 2: Planteamiento del problema 💻
 ## Proyecto Empresa Aumenta Sueldo
 
 <br>
@@ -9,6 +9,8 @@ Al procesar todos los empleados, la empresa desea saber:
 
 <br>
 
+## Requerimientos 📋
+
     a) El nuevo sueldo de cada empleado.
     
     b) El monto total que deberá pagar solo por concepto de incremento de sueldo a todo el personal.
@@ -17,7 +19,7 @@ Al procesar todos los empleados, la empresa desea saber:
 
 <br>
 
-## Análisis 
+## Análisis 📝
 
 <br>
 
