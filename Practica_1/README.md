@@ -1,4 +1,4 @@
-#  Práctica 1: Planteamiento del problema 
+#  Práctica 1: Planteamiento del problema 💻
 ## Presupuesto Familiar
 
 <br>
@@ -8,21 +8,20 @@ Se requiere de un programa que determine para cada integrante el monto que dispo
 
 <br>
 
-## Clases: 
+## Requerimientos 📋
 
-    - Familia
-    - Integrante
-
+    a) Monto total disponible por integrante al mes.
+    b) Monto total disponible para la Familia.
 
 <br>
 
-## Analisis
+## Analisis 📝
 <br>
 
 ![Analisis del problema](Analisis_Practica_1.jpeg)
 
 <br>
 
-## Guía
+## Guía 📖
 [Ejemplo guia realizado por el profesor](http://theeasyweb.net/profe_prog1)
 
