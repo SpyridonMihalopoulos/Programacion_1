@@ -1,4 +1,4 @@
-# Planteamiento del problema: Practica 1
+#  Práctica 1: Planteamiento del problema 
 ## Presupuesto Familiar
 
 <br>
