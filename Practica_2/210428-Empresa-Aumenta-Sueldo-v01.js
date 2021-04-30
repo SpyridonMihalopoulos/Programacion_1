@@ -118,7 +118,7 @@ class VPersonal {
 
     reportePersonal( p = new MPersonal()) {
 
-        reporte.innerHTML += 
+        consola_salida.innerHTML += 
             `${String(p.cedula).padEnd(45,' . ')}` + 
             `${String(p.sueldo).padEnd(40, ' . ')}` + 
             `${String(p.tEmp).padEnd(32, ' . ')}` + 
@@ -131,7 +131,7 @@ class VEmpresa {
 
     reporteEmpresa(e = new MEmpresa()) {
 
-        reporte.innerHTML += 
+        consola_salida.innerHTML += 
             "<br>" + 
             `Total de incremento de sueldo: ${String(e.aumentoTotal)} <br>` + 
             `Porcentaje de personal obrero: ${String(parseInt(e.porcentObrero()))}% <br>`
@@ -155,7 +155,7 @@ class Controlador {
     procesar() {
 
         this.mEmpresa.aumentoTotal = 0;
-        reporte.innerHTML = 
+        consola_salida.innerHTML = 
 
             " -- REPORTE DE PRUEBA -- <br> <br>" +
             "Cédula . . . . . . . . . . Sueldo . . . . . . . . . . Tipo . . . . . . . . " + 
@@ -200,7 +200,7 @@ class Controlador {
             this.mEmpresa.cantPerso = 0;
 
 
-            reporte.innerHTML += 
+            consola_salida.innerHTML += 
 
                 " <br><br>-- REPORTE DE EMPRESA -- <br> <br>" + 
                 "Cédula . . . . . . . . . . Sueldo . . . . . . . . . . Tipo . . . . . . . . " + 
