@@ -1,4 +1,4 @@
-# Práctica 3: Planteamiento del problema  
+# Práctica 3: Planteamiento del problema 💻
 ## Proyecto Estadisticas Estudiantes
 
 <br>
@@ -14,14 +14,14 @@ Sabiendo que se aprueba con un mínimo de 48, y que se tienen las siguientes int
 
 <br> 
 
-## Requerimientos 
+## Requerimientos 📋
 
 	a) Nota promedio del estudiante
 	b) Nombre del mejor estudiante
 
 <br>
 
-## Análisis 
+## Análisis 📝
 
 <br>
 
