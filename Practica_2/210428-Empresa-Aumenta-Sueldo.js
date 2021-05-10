@@ -58,7 +58,7 @@ class MPersonal {
 
 class MEmpresa {
 
-    constructor(cP = 0, cO = 0, aT ) {
+    constructor(cP = 0, cO = 0, aT = 0 ) {
 
         this.cantPerso = cP;
         this.cantObreros = cO;
@@ -104,9 +104,7 @@ class MEmpresa {
 
         this.cantPerso++;
 
-        this.aumentoTotal += parseInt(p.calcularNSueldo() - p.sueldo)
-
-        console.log(this.aumentoTotal)
+        this.aumentoTotal += parseFloat(p.calcularNSueldo() - p.sueldo)
 
         if ( p.tEmp == 1 ) this.cantObreros++; 
     }
@@ -119,11 +117,11 @@ class VPersonal {
     reportePersonal( p = new MPersonal()) {
 
         consola_salida.innerHTML += 
-            `${String(p.cedula).padEnd(45,' . ')}` + 
-            `${String(p.sueldo).padEnd(40, ' . ')}` + 
-            `${String(p.tEmp).padEnd(32, ' . ')}` + 
-            `${String(p.calcularNSueldo() - p.sueldo).padEnd(65,' . ')}` + 
-            `${String(p.calcularNSueldo())}` + "<br>"
+            `${String(p.cedula).padEnd(17,' . ')}` + 
+            `${String(p.sueldo).padEnd(17, ' . ')}` + 
+            `${String(p.tEmp).padEnd(16, ' . ')}` + 
+            `${String(p.calcularNSueldo() - p.sueldo).padEnd(17,' . ')}` + 
+            `${String(p.calcularNSueldo()).padStart(20,' . ')}` + "<br>"
     }
 }
 
@@ -154,13 +152,11 @@ class Controlador {
 
     procesar() {
 
-        this.mEmpresa.aumentoTotal = 0;
         consola_salida.innerHTML = 
 
             " -- REPORTE DE PRUEBA -- <br> <br>" +
-            "Cédula . . . . . . . . . . Sueldo . . . . . . . . . . Tipo . . . . . . . . " + 
-            "Incremento . . . . . . . . . . Nuevo Sueldo <br>" + 
-            "=========================================================================== <br>"
+            "Cédula . . . Sueldo . . . Tipo . . . Incremento . . . Nuevo Sueldo <br>" + 
+            "================================================================== <br>"
 
         const personal1 = new MPersonal( 555, 200, 2);
         const personal2 = new MPersonal( 888, 500, 1);
@@ -203,9 +199,8 @@ class Controlador {
             consola_salida.innerHTML += 
 
                 " <br><br>-- REPORTE DE EMPRESA -- <br> <br>" + 
-                "Cédula . . . . . . . . . . Sueldo . . . . . . . . . . Tipo . . . . . . . . " + 
-                "Incremento . . . . . . . . . . Nuevo Sueldo <br>" + 
-                "=========================================================================== <br>"
+                "Cédula . . . Sueldo . . . Tipo . . . Incremento . . . Nuevo Sueldo <br>" + 
+                "================================================================== <br>"
 
 
             while(procesar) {

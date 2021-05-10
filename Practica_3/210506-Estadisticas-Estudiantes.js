@@ -91,13 +91,13 @@ class VEstudiante {
 	reporteEstudiante(e = new MEstudiante()) {
 		
 		consola_salida.innerHTML += 
-			`${String(e.nombre).padEnd(25, ' . ')}` + 
-			`${String(e.sexo).padEnd(20, ' . ')}` + 
-			`${String(e.nota1).padEnd(20, ' . ')}`+
-			`${String(e.nota2).padEnd(20, ' . ')}`+
-			`${String(e.nota3).padEnd(20, ' . ')}`+
-			`${String(e.condicion()).padEnd(20, ' . ')}`+
-			`${String(e.calcularPromedio()).padStart(20, ' . ')}` + '<br>';
+			`${String(e.nombre).padEnd(17, ' . ')}` + 
+			`${String(e.sexo).padEnd(16, ' . ')}` + 
+			`${String(e.nota1).padEnd(16, ' . ')}`+
+			`${String(e.nota2).padEnd(16, ' . ')}`+
+			`${String(e.nota3).padEnd(17, ' . ')}`+
+			`${String(e.condicion()).padEnd(18, ' . ')}`+
+			`${String(e.calcularPromedio()).padStart(14, ' . ')}` + '<br>';
 
 	}
 		
@@ -108,7 +108,7 @@ class VMateria {
 	reporteMateria(m = new MMateria()) {
 
 		consola_salida.innerHTML += 
-			'<br>' + `Estudiante con mayor nota: ${String(m.mejorNombre)}` + '<br><br>'
+			`<br>Estudiante con mayor nota: ${String(m.mejorNombre)}<br><br>`
 	}
 }
 
@@ -132,9 +132,9 @@ class Contorlador {
 		var estudiante4 = new MEstudiante('Liz', 'F', 20, 26, 32);
 
 		consola_salida.innerHTML = 
-			' < -- REPORTE DE PRUEBA -- > ' +  '<br><br>' + 
+			' -- REPORTE DE PRUEBA -- <br><br>' + 
 			'Nombre . . . Sexo . . . Nota 1 . . . Nota2 . . . Nota 3 . . . Condición . . . Promedio' + '<br>' +
-			'=====================================================================' + '<br>'
+			'======================================================================================' + '<br>'
 
 		this.mMateria.procesarEstudiante(estudiante1);
 		this.vEstudiante.reporteEstudiante(estudiante1);
@@ -167,10 +167,10 @@ class Contorlador {
 			
 
 			consola_salida.innerHTML += 
-				'<br>'+' < -- REPORTE MANUAL -- > ' +  '<br><br>' + 
+				'<br> -- REPORTE MANUAL -- <br><br>' + 
 	
 			'Nombre . . . Sexo . . . Nota 1 . . . Nota2 . . . Nota 3 . . . Condición . . . Promedio' + '<br>' +
-			'=====================================================================' + '<br>'
+			'======================================================================================' + '<br>'
 
 			while(procesar) {
 	
